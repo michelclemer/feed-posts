@@ -71,6 +71,7 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background: var(--color-gray-1)
         }
 
         h1, h2, h3, h4, h5, h5 {
@@ -101,6 +102,46 @@
         
         .main-logo-icon {
             margin-right: 1rem;
+        }
+
+        .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input, .search-btn {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+            transition: all 300ms ease-in-out;
+
+
+        }
+        
+        .search-input{
+            width: 100%;
+            padding-right: 3rem;
+
+        }
+        .search-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+            background: var(--color-white)
+        }
+
+        .search-form:focus-within .search-btn{
+            color: var(--color-primary);
+            cursor: pointer;
         }
     </style>
 </head>
